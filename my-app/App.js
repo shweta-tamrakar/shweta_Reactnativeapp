@@ -18,8 +18,8 @@ export default function App() {
  <>
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen options={({route})=> ({title:route.params.name})} name="Detail" component={DetailsScreen} />
-        <Stack.Screen options={{title:'Home'}} name="Home" component={HomeScreen} />
+        <Stack.Screen options={{headerShown:false}} name="Detail" component={DetailsScreen} />
+        <Stack.Screen options={{headerShown:false}} name="Home" component={HomeScreen} />
       </Stack.Navigator>
     </NavigationContainer>
 
